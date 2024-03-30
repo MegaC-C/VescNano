@@ -2,7 +2,7 @@
 #include <VescUart.h>
 
 VescUart UART;
-int delay_ms = 5000;
+int delay_ms = 1000;
 
 void setup()
 {
@@ -20,7 +20,7 @@ void loop()
     // put your main code here, to run repeatedly:
     // Serial.println("rpm = 200");
 
-    UART.setRPM(0);
+    UART.setCurrent(0);
     delay(delay_ms);
 
     UART.setRPM(1723);
@@ -36,7 +36,7 @@ void loop()
     delay(delay_ms);
 }
 
-// 02050800000000022D03 
+// 02050600000000CD8503
 // 020508000006BBBE3B03 
 // 02050800000D766A2003 
 // 02050800001431EBE803 
